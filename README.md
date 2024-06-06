@@ -1,6 +1,7 @@
 # expense-tracker
 A simple income-expense tracker web application developed using HTML, CSS , JavaScript and Jquery.
 
+--basic imagemap, frameset, lists, etc are used .
 **#Javascript - index.html**
 
 --Javascript is used in income-expense tracker to handle transactions 
