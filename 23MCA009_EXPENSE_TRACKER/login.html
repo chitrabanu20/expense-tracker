@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Registration</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: aliceblue;
+        }
+
+        a {
+            color: rgb(209, 138, 16);
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">
+                Username:
+            </label>
+            <input type="text" id="username" name="username" placeholder="Enter your Username">
+
+            <label for="password">
+                Password:
+            </label>
+            <input type="password" id="password" name="password" placeholder="Enter your Password">
+
+            <div class="wrap">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <a href="#" id="createAccountLink">
+            <p>Create Account</p>
+        </a>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            const staticUsername = "demo";
+            const staticPassword = "demo123";
+
+            // Handle form submission
+            $("#loginForm").on("submit", function(event) {
+                event.preventDefault(); // Prevent form submission
+
+                // Get username and password from form inputs
+                const username = $("#username").val();
+                const password = $("#password").val();
+
+                // Perform simple validation
+                if (username.trim() === "" || password.trim() === "") {
+                    alert("Please enter both username and password.");
+                    return;
+                }
+
+                // Simulate login process (replace with actual backend validation)
+                if (username === staticUsername && password === staticPassword) {
+                    alert("Login successful!");
+                    // Redirect to the dashboard or desired page
+                    window.location.href = "tracker.html";
+                } else {
+                    alert("Invalid username or password.");
+                }
+            });
+
+            // Link to create account page
+            $("#createAccountLink").on("click", function(event) {
+                event.preventDefault(); // Prevent default link behavior
+
+                // Redirect to the create account page
+                window.location.href = "create_account.html";
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2f3542;
+            color: #fff;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px 0 20px 20px; 
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .header ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+           
+        }
+        .header ul li a {
+            color: #fff; /* Text color */
+            text-decoration: none; /* Remove underlines */
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        .header ul li {
+            margin-right: 20px;
+            font-size: 18px;
+            padding: 2px;
+            border-right: 5px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 20px 0;
+            color:hotpink;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        p{
+            background-image: url('"C:\Users\mba20\OneDrive\Pictures\background.jpg"');
+        }
+        body {
+            background-image: url('images/1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav>
+                <!-- 5.UnOrdered List -->
+                <ul>
+                    <li><u><a href="details.html"><p style="color:aquamarine">Details</p></a></u></li>
+                    <li><u><a href="login.html"><p style="color:aquamarine">Login</p></a></u></li>
+                    <li><u><a href="tracker.html"><p style="color:aquamarine">Track Expense</p></a></u></li>
+                    <li><u><a href="help.html"><p style="color:aquamarine">Get Help</p></a></u></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- 14. Image when clicked will redirect to a web page -->
+        <a href="https://www.freshbooks.com/hub/accounting/expense-tracking">
+            <img src="images/unnamed.png" alt="Expense Tracker Logo" class="logo">
+        </a>
+      
+        
+        <h1>Welcome to Expense Tracker</h1>
+
+        <!-- 6. preformated text pre-tag -->
+        <pre style="color:rgb(218, 237, 16)">Effortlessly Take Control of Your Finances with Our Expense Tracker App!</pre>
+        <a href="about.html" class="button"><b>Get To Know</b></a>
+    </div>
+</body>
+
+
+</html>
